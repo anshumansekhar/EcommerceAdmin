@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/YouShopWeShipAdmin/static/css/main.2d3c9da3.chunk.css",
+    "main.js": "/YouShopWeShipAdmin/static/js/main.b2753933.chunk.js",
+    "main.js.map": "/YouShopWeShipAdmin/static/js/main.b2753933.chunk.js.map",
+    "runtime-main.js": "/YouShopWeShipAdmin/static/js/runtime-main.fd23ea16.js",
+    "runtime-main.js.map": "/YouShopWeShipAdmin/static/js/runtime-main.fd23ea16.js.map",
+    "static/css/2.6b8d264a.chunk.css": "/YouShopWeShipAdmin/static/css/2.6b8d264a.chunk.css",
+    "static/js/2.27ee501f.chunk.js": "/YouShopWeShipAdmin/static/js/2.27ee501f.chunk.js",
+    "static/js/2.27ee501f.chunk.js.map": "/YouShopWeShipAdmin/static/js/2.27ee501f.chunk.js.map",
+    "index.html": "/YouShopWeShipAdmin/index.html",
+    "precache-manifest.55d0c16ddbcc97106d8442188663aad5.js": "/YouShopWeShipAdmin/precache-manifest.55d0c16ddbcc97106d8442188663aad5.js",
+    "service-worker.js": "/YouShopWeShipAdmin/service-worker.js",
+    "static/css/2.6b8d264a.chunk.css.map": "/YouShopWeShipAdmin/static/css/2.6b8d264a.chunk.css.map",
+    "static/css/main.2d3c9da3.chunk.css.map": "/YouShopWeShipAdmin/static/css/main.2d3c9da3.chunk.css.map",
+    "static/js/2.27ee501f.chunk.js.LICENSE.txt": "/YouShopWeShipAdmin/static/js/2.27ee501f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd23ea16.js",
+    "static/css/2.6b8d264a.chunk.css",
+    "static/js/2.27ee501f.chunk.js",
+    "static/css/main.2d3c9da3.chunk.css",
+    "static/js/main.b2753933.chunk.js"
+  ]
+}
