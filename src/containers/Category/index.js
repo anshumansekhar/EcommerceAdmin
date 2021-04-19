@@ -35,7 +35,6 @@ const Category = (props) => {
     const category = useSelector(state => state.category);
     const [categoryName, setCategoryName] = useState('');
     const [parentCategoryId, setParentCategoryId] = useState('');
-    const [categoryImage, setCategoryImage] = useState('');
     const [show, setShow] = useState(false);
     const [checked, setChecked] = useState([]);
     const [expanded, setExpanded] = useState([]);
@@ -66,7 +65,6 @@ const Category = (props) => {
 
         form.append('name', categoryName);
         form.append('parentId', parentCategoryId);
-        form.append('categoryImage', categoryImage);
         dispatch(addCategory(form));
         setCategoryName('');
         setParentCategoryId('');
@@ -103,10 +101,6 @@ const Category = (props) => {
         }
 
         return options;
-    }
-
-    const handleCategoryImage = (e) => {
-        setCategoryImage(e.target.files[0]);
     }
 
     const updateCategory = () => {
@@ -268,7 +262,6 @@ const Category = (props) => {
                 parentCategoryId={parentCategoryId}
                 setParentCategoryId={setParentCategoryId}
                 categoryList={categoryList}
-                handleCategoryImage={handleCategoryImage}
             />
             <UpdateCategoriesModal
                 show={updateCategoryModal}

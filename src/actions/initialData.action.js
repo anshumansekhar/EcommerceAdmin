@@ -4,11 +4,11 @@ import {
   productConstants,
   orderConstants,
 } from "./constants";
-import axios from "../helpers/axios";
+import axiosIntance from "../helpers/axios";
 
 export const getInitialData = () => {
   return async (dispatch) => {
-    const res = await axios.post(`/initialData`);
+    const res = await axiosIntance.post(`/initialData`);
     if (res.status === 200) {
       const { categories, products, orders } = res.data;
       dispatch({

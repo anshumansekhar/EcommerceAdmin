@@ -14,6 +14,7 @@ import "./style.css";
 
 const Products = (props) => {
   const [name, setName] = useState("");
+  const [author, setAuthor] = useState("");
   const [quantity, setQuantity] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
@@ -33,6 +34,7 @@ const Products = (props) => {
   const submitProductForm = () => {
     const form = new FormData();
     form.append("name", name);
+    form.append("author",author);
     form.append("quantity", quantity);
     form.append("price", price);
     form.append("description", description);
@@ -42,7 +44,15 @@ const Products = (props) => {
       form.append("productPicture", pic);
     }
 
-    dispatch(addProduct(form)).then(() => setShow(false));
+    dispatch(addProduct(form)).then(() =>{
+      setShow(false);
+      setName('');
+      setAuthor('');
+      setDescription('');
+      setPrice('');
+      setQuantity('');
+      setProductPictures([]);
+    });
   };
   const handleShow = () => setShow(true);
 
@@ -119,6 +129,12 @@ const Products = (props) => {
           value={name}
           placeholder={`Product Name`}
           onChange={(e) => setName(e.target.value)}
+        />
+        <Input
+          label="Author"
+          value={author}
+          placeholder={`Book Author Name`}
+          onChange={(e) => setAuthor(e.target.value)}
         />
         <Input
           label="Quantity"
@@ -216,7 +232,7 @@ const Products = (props) => {
             <label className="key">Product Pictures</label>
             <div style={{ display: "flex" }}>
               {productDetails.productPictures.map((picture) => (
-                <div className="productImgContainer">
+                <div className="productImgContainer" key={picture.name}>
                   <img src={picture.img} alt="" />
                 </div>
               ))}
