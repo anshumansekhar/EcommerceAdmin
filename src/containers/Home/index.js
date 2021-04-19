@@ -1,9 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import { Jumbotron, Row, Col, Container } from 'react-bootstrap';
 import './style.css';
-import { NavLink } from 'react-router-dom';
-import axiosIntance from '../../helpers/axios';
 
 /**
 * @author

@@ -53,6 +53,10 @@ export default (state = initState, action) => {
                 loading: false
             }
             break;
+        default:
+            state={
+                ...initState
+            }
 
     }
 

@@ -10,8 +10,14 @@ export default (state = initState, action) => {
       state = {
         ...state,
         orders: action.payload.orders,
-      };
+      }
       break;
+    default:
+      state = {
+        ...initState
+      }
+
+
   }
 
   return state;
