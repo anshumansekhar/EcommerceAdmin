@@ -1,9 +1,8 @@
-import { authConstants, userContants } from "./constants";
+import {  userContants } from "./constants";
 import axios from "../helpers/axios";
 
 export const signup = (user) => {
 
-    console.log(user)
 
     return async (dispatch) => {
 

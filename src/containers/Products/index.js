@@ -6,6 +6,7 @@ import Modal from "../../components/UI/Modal";
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct, deleteProductById } from "../../actions";
 import "./style.css";
+import { generatePublicUrl } from "../../urlConfig";
 
 /**
  * @author
@@ -86,9 +87,9 @@ const Products = (props) => {
         </thead>
         <tbody>
           {product.products.length > 0
-            ? product.products.map((product) => (
+            ? product.products.map((product,index) => (
                 <tr key={product._id}>
-                  <td>2</td>
+                  <td>{index+1}</td>
                   <td>{product.name}</td>
                   <td>{product.price}</td>
                   <td>{product.quantity}</td>
@@ -233,7 +234,7 @@ const Products = (props) => {
             <div style={{ display: "flex" }}>
               {productDetails.productPictures.map((picture) => (
                 <div className="productImgContainer" key={picture.name}>
-                  <img src={picture.img} alt="" />
+                  <img src={generatePublicUrl(picture.img)} alt={picture.name}/>
                 </div>
               ))}
             </div>

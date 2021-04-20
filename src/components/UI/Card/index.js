@@ -12,7 +12,7 @@ const Card = (props) => {
       {(props.headerLeft || props.headerRight) && (
         <div className="cardHeader">
           {props.headerLeft && <div>{props.headerLeft}</div>}
-          {props.headerRight && props.headerRight}
+          {props.headerRight && <div>{props.headerRight}</div>}
         </div>
       )}
 

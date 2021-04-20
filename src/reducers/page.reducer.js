@@ -27,11 +27,6 @@ export default (state = initState, action) => {
                 error: action.payload.error
             }
             break;
-        default:
-            state={
-                ...initState
-            }
-            break;
     }
 
     return state;

@@ -12,10 +12,7 @@ export default (state = initState, action) => {
         orders: action.payload.orders,
       }
       break;
-    default:
-      state = {
-        ...initState
-      }
+
 
 
   }
